@@ -1,0 +1,15 @@
+name: Wayfinder map
+description: A map issue for /wayfinder. Child tickets hang off it as sub-issues.
+labels: [wayfinder:map]
+body:
+  - type: textarea
+    id: notes
+    attributes: { label: Notes, description: "The goal, the constraints, links." }
+    validations: { required: true }
+  - type: textarea
+    id: decisions
+    attributes: { label: Decisions so far, description: "One line each, with a link to the ticket that resolved it.", value: "- None yet" }
+  - type: textarea
+    id: fog
+    attributes: { label: Fog, description: "What we don't know yet. Each item becomes a research, prototype or grilling ticket." }
+    validations: { required: true }
